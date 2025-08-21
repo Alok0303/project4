@@ -8,8 +8,6 @@ import { useMovieContext } from '../context/moviecontext';
 const Moviecard = ({movie}) => {
     const { addtofavorites, removefromfavorites, isfavorite } = useMovieContext()
     const liked = isfavorite(movie.id);
-
-    
     
 const onlike = () =>{
     if(liked){
